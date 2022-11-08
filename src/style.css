@@ -15,6 +15,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 thead, tbody, tfoot { vertical-align: middle } 
 td, th, tr { vertical-align: inherit }
@@ -41,4 +42,64 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 }
+
 /* end of reset */
+button {
+	cursor : grab;
+	background-color: transparent;
+	border-width: 0;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	padding : 0;
+}
+
+header {
+	height: 100px;
+	background-color: #FCDC69;
+	display: flex;
+	align-items: center;
+	padding: 50px;
+}
+main {
+	display: flex;
+	height: calc(100% - 100px);
+}
+nav {
+	background-color: #FFF7D8;
+	min-width: 200px;
+	padding: 30px;
+}
+nav h2 {
+	padding-bottom: 20px;
+}
+li {
+	padding: 0 0 15px 15px;
+}
+.content {
+	flex-grow: 1;
+}
+
+.content-display {
+	width: 60%;
+	margin : 50px auto;
+}
+.task-title {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #FCDC69;
+	padding : 10px 20px;
+	font-size: 1.4em;
+	font-weight: 700;
+}
+.task {
+	padding: 10px 20px;
+	display: flex;
+	gap: 10px;
+	border-bottom: 1px solid #FCDC69 ;
+}
+.task-name {
+	flex-grow: 1;
+}

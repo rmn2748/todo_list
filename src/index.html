@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Todo List</title>
 </head>
+
 <body>
-    
-    it's working?
+    <header>
+        <h1> TODOLIST</h1>
+    </header>
+    <main>
+        <nav>
+            <h2> Projects</h2>
+            <ul role="list" id="project-list">
+                <li><button>Ménage</button></li>
+                <li><button>DWWM</button></li>
+                <li><button>Sport</button></li>
+            </ul>
+            <h3><button>New project</button></h3>
+        </nav>
+        <div class="content">
+            <div class="content-display">
+                <div class="task-title">
+                    <div class="project"> Ménage</div>
+                    <div class="date">Due Date</div>
+                </div>
+                <div class="task-container">
+                    <div class="task">
+                        <input type="checkbox"> <div class="task-name"> Sortir les poubelles</div><div class="task-date">04-11-2022</div>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox"> <div class="task-name"> Ranger la chambre</div><div class="task-date">04-11-2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
+
 </html>

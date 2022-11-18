@@ -55,7 +55,40 @@ button {
 	line-height: inherit;
 	padding : 0;
 }
+.pop-up-buttons {
+	display: flex;
+	flex-direction: row;
+	gap : 20px;
+	margin-top: 10px;
+}
 
+input[type=text].project {
+	box-sizing: border-box;
+	width : 100%;
+	border-radius: 4px;
+	height: 35px;
+
+}
+.add-button {
+	width:100%;
+	border: 1px solid #99dd99;
+    background-color: #aaffaa;
+    font-weight: bold;
+	width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cancel-button {
+	width:100%;
+	border: 1px solid #e4577a;
+    background-color: #ffbebe;
+    font-weight: bold;
+	width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 header {
 	height: 100px;
 	background-color: #FCDC69;
@@ -69,7 +102,7 @@ main {
 }
 nav {
 	background-color: #FFF7D8;
-	min-width: 200px;
+	min-width: 300px;
 	padding: 30px;
 }
 nav h2 {

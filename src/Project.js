@@ -1,19 +1,17 @@
 const Project = (name) => {
-  const todoList = [];
+  const tasks = [];
 
   const getName = () => name;
 
-  const addTodo = (todo) => todoList.push(todo);
+  const addTask = (task) => tasks.push(task);
 
-  const removeTodo = (todoTitle) => todoList.splice(todoList.indexOf(todoTitle), 1);
+  const removeTask = (taskName) => tasks.splice(tasks.indexOf(taskName), 1);
 
-  const getTodo = (todoIndex) => todoList[todoIndex];
-
-  const getTodoList = () => todoList;
+  const getTasks = () => tasks;
 
   return {
-    todoList, getName, addTodo, removeTodo, getTodo, getTodoList,
+    getTasks, removeTask, addTask, getName,
   };
 };
 
-export { Project };
+export default Project;
